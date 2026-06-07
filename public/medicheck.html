@@ -93,7 +93,7 @@ label{display:block;font-size:.75rem;font-weight:600;color:var(--p);text-transfo
 body.ur label{text-transform:none;font-family:var(--fu);font-size:.85rem;letter-spacing:0;}
 textarea,input[type=text],select{width:100%;border:1.5px solid var(--border);border-radius:var(--rs);padding:.7rem .9rem;font-family:var(--ff);font-size:.95rem;color:var(--text);background:var(--card);outline:none;transition:border-color .2s;resize:vertical;}
 body.ur textarea,body.ur input[type=text]{font-family:var(--fu);font-size:1rem;text-align:right;}
-textarea:focus,input:focus,select:focus{border-color:var(--p);}
+textarea:focus,input: focus, select:focus{border-color:var(--p);}
 textarea{min-height:110px;}
 .fg{margin-bottom:1.1rem;}
 
@@ -493,8 +493,7 @@ function getMeds(){
 }
 
 // ── Backend URL — change this to your deployed server URL in production ────────
-const BACKEND_URL = 'http://localhost:3000';
-
+const BACKEND_URL = 'https://medicheck-backend-production-4812.up.railway.app';
 // ── Analysis ──────────────────────────────────────────────────────────────────
 async function analyze(){
   document.getElementById('s2err').style.display='none';
